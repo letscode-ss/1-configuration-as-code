@@ -17,9 +17,9 @@ pipeline {
         }
     }
     post {
-        success {
+        always {
             junit 'build/test-results/**/*.xml'
-            archiveArtifacts 'build/lib/*.war'
+            archiveArtifacts 'build/libs/*.war'
         }
     }
 }
