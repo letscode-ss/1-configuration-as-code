@@ -1,17 +1,17 @@
 pipeline {
     agent { label 'master' }
     stages {
-        stage("gradle build") { 
+        stage("gradle test") { 
             steps {
                 script { 
                     sh "gradle clean test"
                 }
             }
         }
-        stage("gradle test") { 
+        stage("gradle assemble") { 
             steps {
                 script { 
-                    sh "gradle clean test"
+                    sh "gradle assemble"
                 }
             }
         }
