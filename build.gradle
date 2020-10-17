@@ -27,3 +27,6 @@ dependencies {
 test {
     testLogging.showStandardStreams = true
 }
+war {
+    archiveName = 'web-hello-world.war'
+}
