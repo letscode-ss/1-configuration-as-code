@@ -1,4 +1,4 @@
 problem.md
 */target
-*.gradle
 *build
+.gradle/
